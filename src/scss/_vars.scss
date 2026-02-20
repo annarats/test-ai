@@ -1,0 +1,74 @@
+$bg-dark: #0C0D12;
+$bg-card: #161524;
+$white: #FFFFFF;
+$pink: #CA0078;
+$hot-pink: #F706A3;
+$cyan: #81F3F8;
+
+$gradient-primary: linear-gradient(90deg, $pink 0%, $hot-pink 100%);
+$gradient-text: linear-gradient(90deg, $hot-pink 0%, #5A73EF 44%, $cyan 100%);
+
+$font-heading: 'Involve', sans-serif;
+$font-body: 'Evolventa', sans-serif;
+
+$fs-accent:     82px;
+$fs-heading:    58px;
+$fs-subheading: 32px;
+$fs-body-lg:    18px;
+$fs-body:       14px;
+
+$lh-heading: 90%;
+$lh-body:    110%;
+
+$ls-heading: 0.02em;
+$ls-body:    0;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin pink-glow {
+    box-shadow: 0 0 24px rgba($hot-pink, 0.6);
+}
+
+@mixin type-accent {
+    font-family: $font-heading;
+    font-weight: 500;
+    font-size: $fs-accent;
+    line-height: $lh-heading;
+    letter-spacing: $ls-heading;
+}
+
+@mixin type-heading {
+    font-family: $font-heading;
+    font-weight: 500;
+    font-size: $fs-heading;
+    line-height: $lh-heading;
+    letter-spacing: $ls-heading;
+}
+
+@mixin type-subheading {
+    font-family: $font-heading;
+    font-weight: 400;
+    font-size: $fs-subheading;
+    line-height: $lh-body;
+    letter-spacing: $ls-body;
+}
+
+@mixin type-body-lg {
+    font-family: $font-body;
+    font-weight: 400;
+    font-size: $fs-body-lg;
+    line-height: $lh-body;
+    letter-spacing: $ls-body;
+}
+
+@mixin type-body {
+    font-family: $font-body;
+    font-weight: 400;
+    font-size: $fs-body;
+    line-height: $lh-body;
+    letter-spacing: $ls-body;
+}
